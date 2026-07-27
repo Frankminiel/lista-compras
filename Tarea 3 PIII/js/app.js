@@ -36,6 +36,8 @@ function addProduct() {
     // Marcar como comprado
     checkBtn.addEventListener("click", () => {
         text.classList.toggle("completed");
+        checkBtn.textContent =
+    text.classList.contains("completed") ? "✔ Comprado" : "✔";
     });
 
     // Editar
