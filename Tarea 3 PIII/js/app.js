@@ -41,7 +41,7 @@ function addProduct() {
     // Editar
     editBtn.addEventListener("click", () => {
 
-        const newProduct = prompt("Editar producto:", text.textContent);
+       const newProduct = prompt("Escribe el nuevo nombre del producto:", text.textContent);;
 
         if (newProduct !== null && newProduct.trim() !== "") {
             text.textContent = newProduct.trim();
