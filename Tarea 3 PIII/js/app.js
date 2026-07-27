@@ -8,8 +8,8 @@ function addProduct() {
 
     const product = productInput.value.trim();
 
-    if (product === "") {
-        alert("Escribe un producto.");
+if (product.length < 2) {
+        alert("El nombre del producto debe tener al menos 2 caracteres.");
         return;
     }
 
