@@ -41,8 +41,7 @@ function addProduct() {
     // Editar
     editBtn.addEventListener("click", () => {
 
-       const newProduct = prompt("Escribe el nuevo nombre del producto:", text.textContent);;
-
+        const newProduct = prompt("Escribe el nuevo nombre del producto:", text.textContent);
         if (newProduct !== null && newProduct.trim() !== "") {
             text.textContent = newProduct.trim();
         }
@@ -52,7 +51,7 @@ function addProduct() {
     // Eliminar
     deleteBtn.addEventListener("click", () => {
 
-        if (confirm("¿Deseas eliminar este producto?")) {
+        if (confirm("¿Estás seguro de eliminar este producto de la lista?")) {
             li.remove();
         }
 
