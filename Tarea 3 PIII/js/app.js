@@ -51,7 +51,7 @@ function addProduct() {
     // Eliminar
     deleteBtn.addEventListener("click", () => {
 
-        if (confirm("¿Deseas eliminar este producto?")) {
+        if (confirm("¿Estás seguro de eliminar este producto de la lista?")) {
             li.remove();
         }
 
